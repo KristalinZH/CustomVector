@@ -57,12 +57,12 @@ class Vector{
 
             return *this;
         }
-        T& operator[](size_t index){
+        T& operator[](const size_t index){
             if(index>=size)
                 throw std::out_of_range("Index out of bounds!");
             return elements[index];
         } 
-        const T& operator[](size_t index) const{
+        const T& operator[](const size_t index) const{
             if(index>=size)
                 throw std::out_of_range("Index out of bounds!");
             return elements[index];
